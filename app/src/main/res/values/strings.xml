@@ -1,0 +1,135 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">NeuroBloom</string>
+
+
+    <string name="menu_home" translatable="false">Home</string>
+
+    <!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+    <!--    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>-->
+    <!--    <string name="first_name">First Name</string>-->
+    <!--    <string name="mail">Email</string>-->
+    <!--    <string name="password">Password</string>-->
+    <!--    <string name="login">Login</string>-->
+    <!--    <string name="create_new_account">New? Create an Account!</string>-->
+    <!--    <string name="last_name">Last Name</string>-->
+    <!--    <string name="confirm_password">Confirm Password</string>-->
+    <!--    <string name="parent">Parent</string>-->
+    <!--    <string name="specialist">Specialist</string>-->
+    <!--    <string name="sign_up">Sign Up</string>-->
+    <!--    <string name="i_have_already_account">I have already an account</string>-->
+    <!--    <string name="yes">Yes</string>-->
+    <!--    <string name="no">No</string>-->
+    <!--    <string name="name_of_student">Name Of Student</string>-->
+    <!--    <string name="years_of_student">Year</string>-->
+    <!--    <string name="days_of_student">Day</string>-->
+    <!--    <string name="months_of_student">Month</string>-->
+    <!--    <string name="add_new_user">Add New User</string>-->
+    <!--    <string name="age_of_student">Age of Student</string>-->
+
+
+    <string name="first_name">الاسم الأول</string>
+    <string name="mail">البريد الإلكترونى</string>
+    <string name="sign_up">تسجيل </string>
+    <string name="specialist">اخصائي</string>
+    <string name="parent">ولي أمر</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="create_new_account">ليس لديك حساب؟ تسجيل جديد! </string>
+    <string name="login">تسجيل دخول</string>
+    <string name="password">كلمة المرور</string>
+    <string name="i_have_already_account">لدى حساب بالفعل</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+    <string name="name_of_student">اسم الطالب</string>
+    <string name="years_of_student">سنة</string>
+    <string name="add_new_user">"إضافة طالب "</string>
+    <string name="age_of_student">سن الطالب</string>
+    <string name="No">لا </string>
+    <string name="sometime_1">أحيانًا</string>
+    <string name="rarely"> نادرًا </string>
+    <string name="often_3">غالبًا </string>
+    <string name="always_4">دائمًا </string>
+    <string name="days_of_student">يوم</string>
+    <string name="months_of_student">شهر</string>
+
+
+    <!--    <string name="No">No</string>-->
+    <!--    <string name="rarely">Rarely </string>-->
+    <!--    <string name="sometime_1">Sometime </string>-->
+    <!--    <string name="often_3">often </string>-->
+    <!--    <string name="always_4">always </string>-->
+    <string name="michael_text" translatable="false">يهــدف هــذا المقيــاس إلى التمييــز بــين الطلبــة العــادين وذوي صعوبات التعلم، حيث قـام الكثـير مـن البـاحثين في هـذا المجـال باستخدام هذا المقياس للكشف عـن النقـاط الحرجـة في الكشـف عن الفئتنين باستخلاص أهـم الخصـائص.</string>
+    <string name="instruction_text" translatable="false">إرشادات</string>
+    <string name="test_text" translatable="false">اختبارات</string>
+    <string name="game_text" translatable="false">ألعاب</string>
+    <string name="parentTest1Text" translatable="false">الانتباه</string>
+    <string name="yes_ans" translatable="false">نعم</string>
+    <string name="no_ans" translatable="false">لا</string>
+    <string name="next" translatable="false">التالى</string>
+    <string name="goToGame" translatable="false">الإنتقال إلي الألعاب</string>
+    <string name="goToNextTest" translatable="false">الإنتقال إلي الاختبار التالي</string>
+    <string name="addResult" translatable="false">اضافة الدرجة</string>
+    <string name="goToMain" translatable="false">الإنتقال إلي الصفحة الرئيسية</string>
+    <string name="startTest" translatable="false">بدء الاختبار</string>
+    <string name="age_mons" translatable="false">عمر الطفل بالشهور</string>
+    <string name="gender" translatable="false">الجنس</string>
+    <string name="female" translatable="false">أنثي</string>
+    <string name="male" translatable="false">ذكر</string>
+    <string name="jaundice" translatable="false">شعور بالإشمئزاز</string>
+    <string name="family_member" translatable="false">فرد من العائلة مصاب باضطراب طيف التوحد</string>
+    <string name="goToTest" translatable="false">بدء الاختبار</string>
+    <string name="go_home" translatable="false">الذهاب إلي الصفحة الرئيسية</string>
+
+    <string name="modelResultYes" translatable="false">تشير إجاباتك إلى بعض العلامات المحتملة لاضطراب طيف التوحد (ASD) في طفلك. هذا لا يعني أن طفلك يعاني من ASD ، ولكنه يشير إلى أنه يجب عليك استشارة طبيب لإجراء تقييم مهني. يمكن أن يحدث التشخيص والتدخل المبكر فرقًا كبيرًا في تطور طفلك وحياته.
+</string>
+    <string name="modelResultNo" translatable="false">لا تشير إجاباتك إلى أي علامات على اضطراب طيف التوحد (ASD) في طفلك. ومع ذلك ، فإن هذا الاختبار ليس بديلاً عن التشخيص المهني. إذا كان لديك أي مخاوف بشأن تطور أو سلوك طفلك ، فيجب عليك استشارة طبيب لمزيد من التقييم.
+</string>
+    <string name="learning_deiff">اختبارات صعوبات التعلم</string>
+    <string name="learning_deiff_text"> هي مجموعة من الاضطرابات التي تؤثر على قدرة الفرد على استيعاب واستخدام المعلومات بشكل فعال. صعوبات التعلم قد تكون ناتجة عن عوامل وراثية، أو تشوهات في تطور الدماغ، أو إصابات في الرأس، أو تأثيرات بيئية سلبية.
+</string>
+    <string name="showTests">عرض الاختبارات</string>
+    <string name="autism">اختبارات طيف التوحد</string>
+    <string name="autismText"> هو اضطراب نمائي يؤثر على الدماغ ويسبب صعوبات في التواصل والتفاعل الاجتماعي والسلوك.يظهر التوحد عادة في السنتين الأوليين من الحياة، ولكن قد يتأخر التشخيص في بعض الحالات.
+</string>
+    <string name="q_chat_10">Q-CHAT-10</string>
+    <string name="q_chat_text">هو اختبار للكشف عن التوحد في الأطفال الصغار الذين تتراوح أعمارهم بين 18 و 30 شهرًا. يتكون الاختبار من 10 أسئلة تتعلق بسلوكيات ومهارات الطفل في مجالات التواصل والتفاعل الاجتماعي واللعب التخيلي والحساسية الحسية. هذا الاختبار مصمم للاستخدام كأداة فحص أولية وليس لتشخيص التوحد بشكل نهائي.
+</string>
+    <string name="enter_test">دخول الاختبار</string>
+
+
+    <string-array name="category_name_quiz">
+        <item> نتائج الفرز العصبى</item>
+        <item> نتائج الينوى</item>
+        <item> نتائج بطاريات فتحى الزيات</item>
+        <item> مايكل بست </item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cars_text"> هو أداة تقييم تستخدم في تشخيص التوحد لدى الأطفال. يساهم هذا الاختبار في تحديد درجة التوحد وتقييم سلوكيات الطفل ومهاراته النمائية. يشمل هذا الاختبار عناصر مثل طبيعة علاقة الطفل بالآخرين، والقدرة على التقليد، ومدى القدرة على التواصل اللفظي وغير اللفظي، وكذلك مستوى الاستجابة الذهنية والسمعية.</string>
+    <string name="start">بدء</string>
+    <string name="mental_health">اختبارات فرط الحركة </string>
+    <string name="mental_Info">تشير الاضطرابات العقلية إلى مجموعة واسعة من الحالات التي تؤثر على المزاج والتفكير والسلوك. تشمل أمثلة على الاضطرابات العقلية الاكتئاب واضطرابات القلق وفصام الشخصية واضطرابات الأكل والسلوكيات الإدمانية.
+    </string>
+    <string name="adhd">اختبار فرط الحركة</string>
+    <string name="adhd_info"> هو اسم قديم يطلق على حالة نفسية عصبية نموية تظهر في مرحلة الطفولة وتتضمن أعراضها نمطًا ثابتًا من العلامات الحادة وغير المناسبة من عدم الانتباه والنشاط الزائد والاندفاع عبر بيئات مختلفة مثل المنزل أو المدرسة وهذه الاعراض تضل بالأداء الأكاديمي والاجتماعي والعمل بشكل كبير.  </string>
+
+    <string name="adhd_result_no">بناءً على إجاباتك، يبدو أنك قد لا تكون مصابًا باضطراب فرط الحركة ونقص الانتباه. ومع ذلك، قد تكون هناك عوامل أخرى تساهم في ظهور الأعراض. من المستحسن استشارة أخصائي الرعاية الصحية الذي يمكنه تقييم حالتك بشكل أكبر وتقديم التوجيه المناسب. يشير النموذج إلى احتمالية إصابتك ب</string>
+
+    <string name="adhd_result_yes">بناءً على إجاباتك، يبدو أنك قد تكون مصابًا باضطراب فرط الحركة ونقص الانتباه. من المهم استشارة أخصائي رعاية صحية متخصص في اضطراب فرط الحركة ونقص الانتباه للحصول على تشخيص دقيق ومناقشة خيارات العلاج المحتملة.</string>
+    <string name="recommend">التوصيات و الارشادات</string>
+
+
+    <string name="adhd_ml">يتم تحليل نتائج الاختبار باستخدام نموذج ML للتنبؤ بما إذا كان الطفل مصابًا باضطراب فرط الحركة ونقص الانتباه أم لا. ويوفر معدل دقة أعلى من الطرق الإحصائية التقليدية. </string>
+
+    <string name="adhd_st">يعتمد الاختبار على مجموعة من الأسئلة الموحدة التي يجيب عليها المريض أو والديه أو معلميه. ثم يتم تحليل النتائج باستخدام الأساليب الإحصائية لتحديد ما إذا كان المريض يعاني من اضطراب فرط الحركة ونقص الانتباه أم لا.</string>
+    <string name="title_activity_specialist_main">SpecialistMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

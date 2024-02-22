@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup ="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_logo_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mente"
+        tools:targetApi="31">
+        <activity
+            android:name=".LearningDifficulties.SpecialistMainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_specialist_main"
+            android:theme="@style/Theme.Mente.NoActionBar" />
+        <activity
+            android:name=".ADHD.AdhdHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Autism.Specialist.AutismHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParentTotalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpecialistTotalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Parent.HomeParentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Mente.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Specialist.HomeSpecialistActivity"
+            android:exported="false"
+            android:label="Home"
+            android:theme="@style/Theme.Mente.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Authentication.Ui.Login"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Authentication.Ui.SignUp"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="android.app.language_config"
+            android:resource="@xml/locale_config" />
+    </application>
+
+</manifest>

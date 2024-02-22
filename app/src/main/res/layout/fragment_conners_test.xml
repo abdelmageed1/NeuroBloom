@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="14dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textInProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="18/20"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@id/progress_bar"
+                    app:layout_constraintEnd_toEndOf="@id/progress_bar"
+                    app:layout_constraintTop_toTopOf="@id/progress_bar"
+                    app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+
+                    />
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/CircularDeterminateProgressBar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tvQTitleConners"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+                    tools:text="ماذ يقصد ب علوم الحاسب " />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_Conners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <RadioButton
+                android:id="@+id/rbConnersSelect1"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:checked="false"
+                android:fontFamily="@font/cairo"
+                android:text=" نادراً"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbConnersSelect2"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:checked="false"
+                android:fontFamily="@font/cairo"
+                android:text="احياناً"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbConnersSelect3"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:checked="false"
+                android:fontFamily="@font/cairo"
+                android:text="غالباً"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbConnersSelect4"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:checked="false"
+                android:fontFamily="@font/cairo"
+                android:text=" دائماً"
+                android:textAlignment="center" />
+
+
+        </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

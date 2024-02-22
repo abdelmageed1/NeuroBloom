@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/historyStudentFragment"
+        android:name="com.example.mente.Specialist.ui.history.View.HistoryStudentFragment"
+        android:label="سجل الطلاب"
+        tools:layout="@layout/fragment_history_student">
+        <action
+            android:id="@+id/action_historyStudentFragment_to_selectTestFragment"
+            app:destination="@id/selectTestFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:exitAnim="@anim/animate_farg" />
+    </fragment>
+    <action
+        android:id="@+id/action_historyStudentFragment_to_selectTestFragment"
+        app:destination="@id/selectTestFragment"
+        app:enterAnim="@anim/animate_farg"
+        app:exitAnim="@anim/animate_farg" />
+    <action
+        android:id="@+id/action_selectTestFragment_to_selesctInnerTestFragment"
+        app:destination="@id/selesctInnerTestFragment" />
+    <fragment
+        android:id="@+id/selectTestFragment"
+        android:name="com.example.mente.LearningDifficulties.Specialist.ui.history.View.SelectTestFragment"
+        android:label="فئة الاختبارات"
+        tools:layout="@layout/fragment_select_test">
+        <action
+            android:id="@+id/action_selectTestFragment_to_selesctInnerTestFragment"
+            app:destination="@id/selesctInnerTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selesctInnerTestFragment"
+        android:name="com.example.mente.LearningDifficulties.Specialist.ui.history.View.SelesctInnerTestFragment"
+        android:label="الاختبارات الفرعية"
+        tools:layout="@layout/fragment_selesct_inner_test">
+        <action
+            android:id="@+id/action_selesctInnerTestFragment_to_showRowOfHistoryFragment"
+            app:destination="@id/showRowOfHistoryFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_selesctInnerTestFragment_to_showRowOfHistoryFragment"
+        app:destination="@id/showRowOfHistoryFragment" />
+    <fragment
+        android:id="@+id/showRowOfHistoryFragment"
+        android:name="com.example.mente.Specialist.ui.history.View.ShowRowOfHistoryFragment"
+        android:label="بيانات الطالب"
+        tools:layout="@layout/fragment_show_row_of_history" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mente.LearningDifficulties.ui.home.HomeFragment"
+        android:label="الصفحة الرئيسية"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.mente.Specialist.ui.AboutUsFragment"
+        android:label="ماذا عنا"
+        tools:layout="@layout/fragment_about_us_specialist" />
+
+
+    <!--    <fragment-->
+<!--        android:id="@+id/nav_gallery"-->
+<!--        android:name="com.example.mente.LearningDifficulties.ui.gallery.GalleryFragment"-->
+<!--        android:label="@string/menu_gallery"-->
+<!--        tools:layout="@layout/fragment_gallery" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_slideshow"-->
+<!--        android:name="com.example.mente.LearningDifficulties.ui.slideshow.SlideshowFragment"-->
+<!--        android:label="@string/menu_slideshow"-->
+<!--        tools:layout="@layout/fragment_slideshow" />-->
+</navigation>

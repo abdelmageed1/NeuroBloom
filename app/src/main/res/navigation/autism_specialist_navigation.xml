@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/autism_specialist_navigation"
+    app:startDestination="@id/homeAutismFragment">
+
+<!--    <fragment-->
+<!--        android:id="@+id/qchat10Fragment"-->
+<!--        android:name="com.example.mente.Autism.Specialist.ui.Qchat10Fragment"-->
+<!--        android:label="fragment_qchat10"-->
+<!--        tools:layout="@layout/fragment_qchat10" >-->
+
+<!--        <action-->
+<!--            android:id="@+id/action_qchat10Fragment_to_autismResultFragment"-->
+<!--            app:destination="@id/autismResultFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_qchat10Fragment_to_homeAutismFragment"-->
+<!--            app:destination="@id/homeAutismFragment"-->
+<!--            app:popUpTo="@id/homeAutismFragment"-->
+<!--            app:popUpToInclusive="true" />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/homeAutismFragment"
+        android:name="com.example.mente.Autism.Specialist.ui.HomeAutismFragment"
+        android:label="HomeAutismFragment"
+        tools:layout="@layout/fragment_home_autism">
+        <action
+            android:id="@+id/action_homeAutismFragment_to_addStudentFragment2"
+            app:destination="@id/addStudentFragment2" />
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/evaluationAutismFragment"-->
+<!--        android:name="com.example.mente.Autism.Specialist.ui.EvaluationAutismFragment"-->
+<!--        android:label="fragment_evaluation_autism"-->
+<!--        tools:layout="@layout/fragment_evaluation_autism" >-->
+
+<!--        <action-->
+<!--            android:id="@+id/action_evaluationAutismFragment_to_qchat10Fragment"-->
+<!--            app:destination="@id/qchat10Fragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/autismResultFragment"-->
+<!--        android:name="com.example.mente.Autism.Specialist.ui.AutismResultFragment"-->
+<!--        android:label="fragment_autism_result"-->
+<!--        tools:layout="@layout/fragment_autism_result" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_autismResultFragment_to_homeAutismFragment"-->
+<!--            app:destination="@id/homeAutismFragment"-->
+<!--            app:popUpTo="@id/homeAutismFragment"-->
+<!--            app:popUpToInclusive="true" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_autismResultFragment_to_recomendationFragment2"-->
+<!--            app:destination="@id/recomendationFragment2" />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/carsAutismTestFragment"
+        android:name="com.example.mente.Autism.Specialist.ui.CarsAutismTestFragment"
+        android:label="CarsAutismTestFragment"
+        tools:layout="@layout/fragment_cars_autism_test">
+        <action
+            android:id="@+id/action_carsAutismTestFragment_to_carsResultFragment"
+            app:destination="@id/carsResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carsResultFragment"
+        android:name="com.example.mente.Autism.Specialist.ui.CarsResultFragment"
+        android:label="fragment_cars_result"
+        tools:layout="@layout/fragment_cars_result" >
+        <action
+            android:id="@+id/action_carsResultFragment_to_recomendationFragment2"
+            app:destination="@id/recomendationFragment2" />
+        <action
+            android:id="@+id/action_carsResultFragment_to_homeAutismFragment"
+            app:destination="@id/homeAutismFragment"
+            app:popUpTo="@id/homeAutismFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/recomendationFragment2"
+        android:name="com.example.mente.RecomendationFragment"
+        android:label="fragment_recomendation"
+        tools:layout="@layout/fragment_recomendation" />
+    <fragment
+        android:id="@+id/gilamTestFragment"
+        android:name="com.example.mente.Autism.Specialist.ui.GilamTestFragment"
+        android:label="fragment_gilam_test"
+        tools:layout="@layout/fragment_gilam_test" >
+        <action
+            android:id="@+id/action_gilamTestFragment_to_gilamResultFragment"
+            app:destination="@id/gilamResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gilamResultFragment"
+        android:name="com.example.mente.Autism.Specialist.ui.GilamResultFragment"
+        android:label="GilamResultFragment"
+        tools:layout="@layout/fragment_gilam_result">
+        <action
+            android:id="@+id/action_gilamResultFragment_to_homeAutismFragment"
+            app:destination="@id/homeAutismFragment"
+            app:popUpTo="@id/homeAutismFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentFragment2"
+        android:name="com.example.mente.Student.View.AddStudentFragment"
+        android:label="AddStudentFragment" >
+        <action
+            android:id="@+id/action_addStudentFragment2_to_gilamTestFragment"
+            app:destination="@id/gilamTestFragment" />
+        <action
+            android:id="@+id/action_addStudentFragment2_to_carsAutismTestFragment"
+            app:destination="@id/carsAutismTestFragment" />
+    </fragment>
+</navigation>

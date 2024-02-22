@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Specialist.ui.history.View.ShowRowOfHistoryFragment">
+
+
+    <Button
+        android:id="@+id/btn_Diff"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="صعوبات التعلم"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:fontFamily="@font/cairo"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Adhd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btn_Autism"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="طيف التوحد"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cairo"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Adhd"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btn_Adhd"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cairo"
+        android:text="فرط الحركة"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Autism"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Diff"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_Diff"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:text="صعوبات التعلم"-->
+<!--        android:textSize="30dp"-->
+<!--        android:textColor="@color/base_color"-->
+<!--        android:background="@drawable/round_button"-->
+<!--        app:backgroundTint="@null"-->
+<!--        android:fontFamily="@font/cairo"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_Autism"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="172dp"-->
+<!--        android:text="توحد "-->
+<!--        android:textSize="30dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.367"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_Adhd"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="260dp"-->
+<!--        android:text="فرط حركة "-->
+<!--        android:textSize="30dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.332"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

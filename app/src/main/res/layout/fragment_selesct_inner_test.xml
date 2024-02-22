@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Specialist.ui.history.View.ShowRowOfHistoryFragment">
+
+<LinearLayout
+    android:id="@+id/lin1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:ignore="MissingConstraints">
+    <Button
+        android:id="@+id/btn_neuron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الفرز العصبى"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/cairo"
+      />
+
+    <Button
+        android:id="@+id/btn_elioni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الينوى"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/cairo"
+      />
+
+
+    <Button
+        android:id="@+id/btn_maichel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" مايكل بست   "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/cairo"
+        />
+
+    <Button
+        android:id="@+id/btn_fathy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" بطاريات فتحى الزيات "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/cairo"
+
+     />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/lin2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:ignore="MissingConstraints">
+    <Button
+        android:id="@+id/btn_autism_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" كارز"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:fontFamily="@font/cairo"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/btn_autism_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" جيليام"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:fontFamily="@font/cairo"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/lin3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:ignore="MissingConstraints">
+    <Button
+        android:id="@+id/btn_adhd_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" فرط الحركة ل د "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/cairo"
+        />
+    <Button
+        android:id="@+id/btn_adhd_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" كونرز"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/cairo"
+        />
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

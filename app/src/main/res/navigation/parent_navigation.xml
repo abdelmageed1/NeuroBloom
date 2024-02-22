@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home_parent">
+
+    <fragment
+        android:id="@+id/nav_home_parent"
+        android:name="com.example.mente.Parent.ui.HomeParentFragment"
+        android:label="الصفحة الرئيسية"
+        tools:layout="@layout/fragment_home_parent">
+<!--        <action-->
+<!--            android:id="@+id/action_nav_home_parent_to_instructionFragment"-->
+<!--            app:destination="@id/instructionFragment" />-->
+        <action
+            android:id="@+id/action_nav_home_parent_to_parentTestsFragment"
+            app:destination="@id/parentTestsFragment" />
+        <action
+            android:id="@+id/action_nav_home_parent_to_instructionTypeFragment"
+            app:destination="@id/instructionTypeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_setting_parent"
+        android:name="com.example.mente.Parent.ui.ParentSettingFragment"
+        android:label="الاعدادات"
+        tools:layout="@layout/fragment_parent_setting" />
+
+    <fragment
+        android:id="@+id/nav_about_parent"
+        android:name="com.example.mente.Parent.ui.ParentAboutFragment"
+        android:label="ماذا عنا"
+        tools:layout="@layout/fragment_about_parent" />
+    <fragment
+        android:id="@+id/testsFragment"
+        android:name="com.example.mente.Parent.ui.screens.TestsFragment"
+        android:label="الاختبارات"
+        tools:layout="@layout/fragment_tests">
+        <action
+            android:id="@+id/action_testsFragment_to_testTypeParent"
+            app:destination="@id/testTypeParent"
+            app:enterAnim="@anim/animate_farg" />
+    </fragment>
+    <fragment
+        android:id="@+id/testTypeParent"
+        android:name="com.example.mente.Parent.ui.screens.TestTypeParent"
+        android:label="الاسئلة"
+        tools:layout="@layout/fragment_test_type_parent" >
+        <action
+            android:id="@+id/action_testTypeParent_to_evaluationParentFragment"
+            app:destination="@id/evaluationParentFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/testsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/evaluationParentFragment"
+        android:name="com.example.mente.Parent.ui.screens.EvaluationParentFragment"
+        android:label="التقييم"
+        tools:layout="@layout/fragment_evaluation_parent" >
+<!--        <action-->
+<!--            android:id="@+id/action_evaluationParentFragment_to_nav_home_parent"-->
+<!--            app:destination="@id/nav_home_parent"-->
+<!--            app:popUpTo="@id/nav_home_parent"-->
+<!--            app:popUpToInclusive="true" />-->
+        <action
+            android:id="@+id/action_evaluationParentFragment_to_testsFragment"
+            app:destination="@id/testsFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/testsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.example.mente.Parent.ui.instruction.InstructionFragment"
+        android:label="الارشادات"
+        tools:layout="@layout/fragment_instruction" />
+    <fragment
+        android:id="@+id/historyParentFragment"
+        android:name="com.example.mente.Parent.history.HistoryParentFragment"
+        android:label="السجل"
+        tools:layout="@layout/fragment_history_parent" />
+    <fragment
+        android:id="@+id/parentTestsFragment"
+        android:name="com.example.mente.LearningDifficulties.Parent.ui.screens.ParentTestsFragment"
+        android:label="الاختبارات"
+        tools:layout="@layout/fragment_parent_tests">
+        <action
+            android:id="@+id/action_parentTestsFragment_to_testsFragment"
+            app:destination="@id/testsFragment" />
+        <action
+            android:id="@+id/action_parentTestsFragment_to_parentAutismFragment"
+            app:destination="@id/parentAutismFragment" />
+        <action
+            android:id="@+id/action_parentTestsFragment_to_parentAdhdFragment"
+            app:destination="@id/parentAdhdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parentAutismFragment"
+        android:name="com.example.mente.LearningDifficulties.Parent.ui.screens.ParentAutismFragment"
+        android:label="اختبارات التوحد"
+        tools:layout="@layout/fragment_parent_autism" >
+
+        <action
+            android:id="@+id/action_parentAutismFragment_to_evaluationAutismFragment"
+            app:destination="@id/evaluationAutismFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parentAdhdFragment"
+        android:name="com.example.mente.LearningDifficulties.Parent.ui.screens.ParentAdhdFragment"
+        android:label="اختبارات فرط الحركة"
+        tools:layout="@layout/fragment_parent_adhd" >
+
+        <action
+            android:id="@+id/action_parentAdhdFragment_to_mentalHealthInfoFragment"
+            app:destination="@id/mentalHealthInfoFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/instructionTypeFragment"
+        android:name="com.example.mente.LearningDifficulties.Parent.ui.InstructionTypeFragment"
+        android:label="الارشادات"
+        tools:layout="@layout/fragment_instruction_type" >
+        <action
+            android:id="@+id/action_instructionTypeFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/evaluationAutismFragment"
+        android:name="com.example.mente.Autism.Specialist.ui.EvaluationAutismFragment"
+        android:label="fragment_evaluation_autism"
+        tools:layout="@layout/fragment_evaluation_autism" >
+        <action
+            android:id="@+id/action_evaluationAutismFragment_to_qchat10Fragment"
+            app:destination="@id/qchat10Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qchat10Fragment"
+        android:name="com.example.mente.Autism.Specialist.ui.Qchat10Fragment"
+        android:label="Qchat10Fragment"
+        tools:layout="@layout/fragment_qchat10">
+        <action
+            android:id="@+id/action_qchat10Fragment_to_autismResultFragment"
+            app:destination="@id/autismResultFragment" />
+        <action
+            android:id="@+id/action_qchat10Fragment_to_parentAutismFragment"
+            app:destination="@id/parentAutismFragment"
+            app:popUpTo="@id/parentAutismFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/autismResultFragment"
+        android:name="com.example.mente.Autism.Specialist.ui.AutismResultFragment"
+        android:label="fragment_autism_result"
+        tools:layout="@layout/fragment_autism_result" >
+        <action
+            android:id="@+id/action_autismResultFragment_to_parentAutismFragment"
+            app:destination="@id/parentAutismFragment"
+            app:popUpTo="@id/parentAutismFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_autismResultFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentalHealthInfoFragment"
+        android:name="com.example.mente.ADHD.UI.MentalHealthInfoFragment"
+        android:label="fragment_mental_health_info"
+        tools:layout="@layout/fragment_mental_health_info" >
+        <action
+            android:id="@+id/action_mentalHealthInfoFragment_to_mentalHealthTestFragment"
+            app:destination="@id/mentalHealthTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentalHealthTestFragment"
+        android:name="com.example.mente.ADHD.UI.MentalHealthTestFragment"
+        android:label="fragment_mental_health_test"
+        tools:layout="@layout/fragment_mental_health_test" >
+        <action
+            android:id="@+id/action_mentalHealthTestFragment_to_mentalHealthResult"
+            app:destination="@id/mentalHealthResult" />
+        <action
+            android:id="@+id/action_mentalHealthTestFragment_to_parentAdhdFragment"
+            app:destination="@id/parentAdhdFragment"
+            app:popUpTo="@id/parentAdhdFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentalHealthResult"
+        android:name="com.example.mente.ADHD.UI.MentalHealthResult"
+        android:label="fragment_mental_health_result"
+        tools:layout="@layout/fragment_mental_health_result" >
+        <action
+            android:id="@+id/action_mentalHealthResult_to_parentAdhdFragment"
+            app:destination="@id/parentAdhdFragment"
+            app:popUpTo="@id/parentAdhdFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mentalHealthResult_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+    <Button
+        android:id="@+id/buttonDiff"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="صعوبات التعلم"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:fontFamily="@font/cairo"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdhd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/buttonAutism"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="طيف التوحد"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cairo"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdhd"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/buttonAdhd"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:textColor="@color/base_color"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@null"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cairo"
+        android:text="فرط الحركة"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAutism"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDiff"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

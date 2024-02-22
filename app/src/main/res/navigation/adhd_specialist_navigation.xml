@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adhd_specialist_navigation.xml"
+    app:startDestination="@id/adhdTestsFragment">
+
+    <fragment
+        android:id="@+id/adhdTestsFragment"
+        android:name="com.example.mente.ADHD.UI.AdhdTestsFragment"
+        android:label="fragment_adhd_tests"
+        tools:layout="@layout/fragment_adhd_tests" >
+<!--        <action-->
+<!--            android:id="@+id/action_adhdTestsFragment_to_mentalHealthInfoFragment"-->
+<!--            app:destination="@id/mentalHealthInfoFragment" />-->
+        <action
+            android:id="@+id/action_adhdTestsFragment_to_addStudentFragment3"
+            app:destination="@id/addStudentFragment3" />
+        <!--        <action-->
+<!--            android:id="@+id/action_adhdTestsFragment_to_connersTestFragment"-->
+<!--            app:destination="@id/connersTestFragment" />-->
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/mentalHealthInfoFragment"-->
+<!--        android:name="com.example.mente.ADHD.UI.MentalHealthInfoFragment"-->
+<!--        android:label="fragment_mental_health_info"-->
+<!--        tools:layout="@layout/fragment_mental_health_info" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_mentalHealthInfoFragment_to_mentalHealthTestFragment"-->
+<!--            app:destination="@id/mentalHealthTestFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/mentalHealthTestFragment"-->
+<!--        android:name="com.example.mente.ADHD.UI.MentalHealthTestFragment"-->
+<!--        android:label="fragment_mental_health_test"-->
+<!--        tools:layout="@layout/fragment_mental_health_test" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_mentalHealthTestFragment_to_mentalHealthResult"-->
+<!--            app:destination="@id/mentalHealthResult" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_mentalHealthTestFragment_to_adhdTestsFragment"-->
+<!--            app:destination="@id/adhdTestsFragment"-->
+<!--            app:popUpTo="@id/adhdTestsFragment"-->
+<!--            app:popUpToInclusive="true" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/mentalHealthResult"-->
+<!--        android:name="com.example.mente.ADHD.UI.MentalHealthResult"-->
+<!--        android:label="fragment_mental_health_result"-->
+<!--        tools:layout="@layout/fragment_mental_health_result" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_mentalHealthResult_to_adhdTestsFragment"-->
+<!--            app:destination="@id/adhdTestsFragment"-->
+<!--            app:popUpTo="@id/adhdTestsFragment"-->
+<!--            app:popUpToInclusive="true" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_mentalHealthResult_to_recomendationFragment"-->
+<!--            app:destination="@id/recomendationFragment" />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/staticAdhdTestFragment"
+        android:name="com.example.mente.ADHD.UI.StaticAdhdTestFragment"
+        android:label="fragment_static_adhd_test"
+        tools:layout="@layout/fragment_static_adhd_test" >
+        <action
+            android:id="@+id/action_staticAdhdTestFragment_to_staticAdhdResultFragment"
+            app:destination="@id/staticAdhdResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/staticAdhdResultFragment"
+        android:name="com.example.mente.ADHD.UI.StaticAdhdResultFragment"
+        android:label="fragment_static_adhd_result"
+        tools:layout="@layout/fragment_static_adhd_result" >
+        <action
+            android:id="@+id/action_staticAdhdResultFragment_to_adhdTestsFragment"
+            app:destination="@id/adhdTestsFragment"
+            app:popUpTo="@id/adhdTestsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_staticAdhdResultFragment_to_recomendationFragment"
+            app:destination="@id/recomendationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recomendationFragment"
+        android:name="com.example.mente.RecomendationFragment"
+        android:label="fragment_recomendation"
+        tools:layout="@layout/fragment_recomendation" />
+    <fragment
+        android:id="@+id/connersTestFragment"
+        android:name="com.example.mente.ADHD.UI.ConnersTestFragment"
+        android:label="fragment_conners_test"
+        tools:layout="@layout/fragment_conners_test" >
+        <action
+            android:id="@+id/action_connersTestFragment_to_connersResultFragment"
+            app:destination="@id/connersResultFragment" />
+        <action
+            android:id="@+id/action_connersTestFragment_to_adhdTestsFragment"
+            app:destination="@id/adhdTestsFragment"
+            app:popUpTo="@id/adhdTestsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/connersResultFragment"
+        android:name="com.example.mente.ADHD.UI.ConnersResultFragment"
+        android:label="fragment_conners_result"
+        tools:layout="@layout/fragment_conners_result" >
+        <action
+            android:id="@+id/action_connersResultFragment_to_adhdTestsFragment"
+            app:destination="@id/adhdTestsFragment"
+            app:popUpTo="@id/adhdTestsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/connersInfoFragment"
+        android:name="com.example.mente.ADHD.UI.ConnersInfoFragment"
+        android:label="ConnersInfoFragment"
+        tools:layout="@layout/fragment_conners_info">
+        <action
+            android:id="@+id/action_connersInfoFragment_to_connersTestFragment"
+            app:destination="@id/connersTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentFragment3"
+        android:name="com.example.mente.Student.View.AddStudentFragment"
+        android:label="AddStudentFragment" >
+        <action
+            android:id="@+id/action_addStudentFragment3_to_connersInfoFragment"
+            app:destination="@id/connersInfoFragment" />
+        <action
+            android:id="@+id/action_addStudentFragment3_to_staticAdhdTestFragment"
+            app:destination="@id/staticAdhdTestFragment" />
+    </fragment>
+</navigation>

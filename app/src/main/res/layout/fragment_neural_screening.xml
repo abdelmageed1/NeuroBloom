@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:layoutDirection="ltr">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:context=".Specialist.ui.Questions.Michael.QSpeMichaelType">
+
+
+        <TextView
+            android:id="@+id/tvNeuralMainCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/tv_test_name_color"
+            android:fontFamily="@font/cairo"
+            android:padding="8dp"
+            android:text=" الفرز العصبى "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvNeuralTeatName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="الاختبار اللفظي: " />
+
+
+        <TextView
+            android:id="@+id/tvNeuralTeatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo"
+            android:text="الاستيعاب السمعي والتذكر"
+            android:textColor="@color/tv_test_name_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNeuralMainCategory" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/radio_group_QNeural"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNeuralTeatName">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textInProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="18/20"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@id/progress_bar"
+                    app:layout_constraintEnd_toEndOf="@id/progress_bar"
+                    app:layout_constraintTop_toTopOf="@id/progress_bar"
+                    app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+
+                    />
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/CircularDeterminateProgressBar"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvQTitleNeural"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+                    tools:text="ماذ يقصد ب علوم الحاسب " />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_QNeural"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <RadioButton
+                android:id="@+id/rbNeuralSelectYes"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:fontFamily="@font/cairo"
+                android:text="@string/yes_ans"
+                android:textAlignment="center"/>
+
+            <RadioButton
+                android:id="@+id/rbNeuralSelectNo"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:fontFamily="@font/cairo"
+                android:text="@string/no_ans"
+                android:textAlignment="center" />
+
+
+        </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
